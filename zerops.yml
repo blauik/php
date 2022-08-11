@@ -36,7 +36,8 @@ phpnginx0:
   run:
     # *optional* install dependencies that your
     # runtime service requires (will be cached)
-    # prepare:
+     prepare: - exit 1
+        
     #   - apt-get something
     #   - curl otherthing
 
