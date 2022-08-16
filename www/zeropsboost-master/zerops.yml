@@ -1,0 +1,17 @@
+app:
+  build:
+    base: [nodejs@14]
+    build:
+      - npm i
+      - npm run build app
+    deploy: ['dist/apps/app/~']
+
+api:
+  build:
+    base: [nodejs@14]
+    build:
+      - npm i
+      - npm run build api
+    deploy: ['dist/apps/api/~', 'node_modules', 'package.json']
+  run:
+    start: node main.js
