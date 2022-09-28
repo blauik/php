@@ -1,17 +1,21 @@
-app:
-  build:
-    base: [nodejs@14]
-    build:
-      - npm i
-      - npm run build app
-    deploy: ['dist/apps/app/~']
+# hostname of your service
+# (supports monorepositories! just add
+# one service section after the sother)
+nodejs0:
 
-api:
-  build:
-    base: [nodejs@14]
-    build:
-      - npm i
-      - npm run build api
-    deploy: ['dist/apps/api/~', 'node_modules', 'package.json']
-  run:
-    start: node main.js
+    # *optional* add additional dependencies
+    # on top of base technology (combination
+    # will be cached for next build)
+    # prepare:
+    #   - apt-get something
+    #   - curl otherthin
+
+    # select which files / folders to deploy
+    # after the build succesfully finished
+    deploy: [ dist, package.json ]
+
+    # *optional*: which files / folders
+    # to cache for the next use
+    cache: [ node_modules ]
+
+  # ==== how to run your application ====
