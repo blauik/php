@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "Task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "task_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-category.task-category"
+    },
+    "drivers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "drivers.driver-value"
+    },
+    "status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-status.task-status"
+    },
+    "internal_priority": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-internal-priority.task-internal-priority"
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "task_effort": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-effort.task-effort"
+    },
+    "assignees": {
+      "displayName": "Assignee value",
+      "type": "component",
+      "repeatable": true,
+      "component": "assignees.assignee-value"
+    },
+    "discussion_link": {
+      "type": "string"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

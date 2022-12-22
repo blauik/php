@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "task_efforts",
+  "info": {
+    "singularName": "task-effort",
+    "pluralName": "task-efforts",
+    "displayName": "Task effort",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "priority": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "task_internal_priorities",
+  "info": {
+    "singularName": "task-internal-priority",
+    "pluralName": "task-internal-priorities",
+    "displayName": "Task internal priority",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "status_color": {
+      "type": "string"
+    },
+    "bg_color": {
+      "type": "string"
+    }
+  }
+}

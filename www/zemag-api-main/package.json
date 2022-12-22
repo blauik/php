@@ -1,0 +1,30 @@
+{
+  "name": "zemag-api",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Zemag",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.3.6",
+    "@strapi/plugin-users-permissions": "4.3.6",
+    "@strapi/provider-upload-aws-s3": "4.3.6",
+    "@strapi/strapi": "4.3.6",
+    "mysql": "2.18.1",
+    "pg": "8.8.0",
+    "strapi-plugin-import-export-entries": "1.13.0"
+  },
+  "strapi": {
+    "uuid": "df187445-93d9-4988-94f1-b97a62e556ce"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

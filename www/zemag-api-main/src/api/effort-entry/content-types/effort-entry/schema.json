@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "effort_entries",
+  "info": {
+    "singularName": "effort-entry",
+    "pluralName": "effort-entries",
+    "displayName": "Effort entry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "task_id": {
+      "type": "integer"
+    },
+    "hour_effort": {
+      "type": "integer"
+    },
+    "user_id": {
+      "type": "integer"
+    },
+    "created": {
+      "type": "date"
+    }
+  }
+}

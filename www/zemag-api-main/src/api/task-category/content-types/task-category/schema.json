@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "task_categories",
+  "info": {
+    "singularName": "task-category",
+    "pluralName": "task-categories",
+    "displayName": "Task category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "priority": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_assignees_assignee_values",
+  "info": {
+    "displayName": "Assignee value",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "done": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

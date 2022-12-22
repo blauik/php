@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_drivers_driver_values",
+  "info": {
+    "displayName": "Driver value",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "driver": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::driver.driver"
+    },
+    "value": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    }
+  }
+}

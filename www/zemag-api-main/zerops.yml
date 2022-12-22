@@ -1,0 +1,35 @@
+api:
+  build:
+    base: [ nodejs@16 ]
+    build:
+      - yarn
+      - yarn build
+    deploy: [ ./ ]
+  run:
+    init:
+      - echo "Dummy init command."
+    start: yarn start
+
+wapi:
+  build:
+    base: [ nodejs@16 ]
+    build:
+      - yarn
+      - yarn build
+    deploy: [ ./ ]
+  run:
+    init:
+      - echo "Dummy init command."
+    start: yarn start
+
+rapi:
+  build:
+    base: [ nodejs@16 ]
+    build:
+      - yarn
+      - yarn build
+    deploy: [ ./ ]
+  run:
+    init:
+      - echo "Dummy init command."
+    start: yarn start
